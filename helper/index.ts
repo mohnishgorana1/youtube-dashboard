@@ -23,3 +23,8 @@ export function timeAgo(dateString: string): string {
 
   return "just now";
 }
+
+export function isValidEmail(email: string) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email.trim());
+}
