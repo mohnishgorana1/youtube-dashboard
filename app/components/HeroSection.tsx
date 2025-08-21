@@ -78,12 +78,12 @@ export default function HeroSection() {
       const res = await checkStatus(statusEmail);
       if (res.success) {
         if (res.status === "approved") {
-          toast.success(
-            "Your request has been approved. You can now connect YouTube."
-          );
+          // toast.success(
+          //   "Your request has been approved. You can now connect YouTube."
+          // );
           setResponseCheckingStatus("Approved");
         } else {
-          toast("⏳ Your request is still pending for approval.");
+          // toast("⏳ Your request is still pending for approval.");
           setResponseCheckingStatus("Pending");
         }
       } else {
