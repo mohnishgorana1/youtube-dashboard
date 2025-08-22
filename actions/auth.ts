@@ -11,7 +11,7 @@ export const disconnectYoutube = async () => {
 
   cookieStore.delete("userEmail");
   cookieStore.delete("userName");
-  cookieStore.delete("channelId")
-  cookieStore.delete("userId")
-
+  cookieStore.delete("channelId");
+  cookieStore.delete("userId");
+  redirect("/");
 };
